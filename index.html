@@ -4,26 +4,86 @@
         <meta charset="utf-8">
         <meta>
         <title>Ignitro Code Test</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+        </script>
+        <script src="index.js"></script>
     </head>
+    
+    <style>
+        body{
+            background: #ffff;
+        }
+        
+        img{
+            width: 33%;
+            height: auto;
+        }
+        
+        nav, .Intro{
+            background-image: linear-gradient(#d4dbff, #f3f5ff);
+            display: grid;
+            
+        }
+        
+        #Menu{
+            display: flex;
+            margin: 10px;
+            padding: 20px;
+        }
+        
+        .Companies{}
+        
+        #Companieslogo{
+            display: flex;
+            width: 65%;
+            height: auto;
+            margin-left: 4%;
+            margin-right: 4%;
+            align-content: center;
+        }
+        
+        #Companieslogo > img{
+            margin: 4%;
+        }
+        
+        .Blue_Boxes{
+            background-image: linear-gradient(#f3f5ff, #d4dbff);
+        }
+        
+        .Lorem_List{}
+        
+        footer{
+            background-image: linear-gradient(#d4dbff, #f3f5ff);
+        }
+        
+        Footerlink{
+            display: flex;
+        }
+    </style>
     
     <body>
         <nav>
-            <img src ="images/Title.png">
-            <h3>About</h3>
-            <h3>Services</h3>
-            <h3>Blog</h3>
-            <h3>Contact</h3>
+            <div id = "Menu">
+                <img src ="images/Title.png">
+                <h3>About</h3>
+                <h3>Services</h3>
+                <h3>Blog</h3>
+                <h3>Contact</h3>
+                <h2>Helping contractors get found by the right people</h2>
+                <img src="images/Dog_1.png">
+                <p>We create valuable conversions to grow your business and take incoming calls off your hands</p>
+            </div>
         </nav>
         
-        <section id="Intro">
-            <h2>Helping contractors get found by the right people</h2>
-            <img>
-            <p>We create valuable conversions to grow your business and take incoming calls off your hands</p>
-        </section>
-        
-        <section id= "Companies">
-            <p>Helping to Grow the Next Generation of Companies</p>
-            <div>
+        <section class= "Companies">
+            <p align ="center" >
+                <b>Helping to Grow the Next Generation of Companies</b>
+            </p>
+            <div id="Companieslogo" align="center">
                 <img src ="images/HandyMoon.png">
                 <img src ="images/Roanoke.png">
                 <img src ="images/Eversound.png">
@@ -31,7 +91,7 @@
             </div>
         </section>
         
-        <section id ="Blue_Boxes">
+        <section class="Blue_Boxes">
             <h2>Using intuitive marketing to bring in and manage qualified leads.</h2>
             <p>Lorem ipsum</p>
             <div>
@@ -39,7 +99,7 @@
             </div>
         </section>
         
-        <section id ="Lorem_List">
+        <section class="Lorem_List">
             <h2>Lorem ipsum dolor sit amet no dicat mazim</h2>
             <p>Lorem ipsum dolor sit amet, no dicat mazim tation eam, eu odio adolescens assueverit mea. An quo eligendi copiosae. Nam hinc facilis consequat at.</p>
             <ul></ul>
@@ -51,6 +111,10 @@
             <div id = "Footerlinks">
                 <p>Copyright  2021 9 Dogs Marketing. All Rights Reserved</p>
                 <img src="images/Dog_3.png">
+                <i class="fa fa-facebook-official" style="font-size:36px"></i>
+                <i class="fa fa-twitter-square" style="font-size:36px"></i>
+                <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+                <i class="fa fa-youtube-play" style="font-size:36px"></i>
             </div>
         </footer>
     </body>
