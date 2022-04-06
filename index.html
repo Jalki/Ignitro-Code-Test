@@ -1,173 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">  
-    <head>
-        <meta charset="utf-8">
-        <meta>
-        <title>Ignitro Code Test</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
-        </script>
-        <script src="index.js"></script>
-    </head>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta>
+    <title>Ignitro Code Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
+</head>
+
+<style>
+    body {
+        background: #ffff;
+        font-family: 'Manrope', sans-serif;
+    }
     
-    <style>
-        
-        @font-face { font-family: Manrope; src: url('Manrope-VariableFont_wght.TFF'); } 
-        
-        body{
-            background: #ffff;
-            font-family: Manrope;
-        }
-        
-        img{
-            width: 33%;
-            height: auto;
-        }
-        
-        button{
-            color: white;
-            border: none;
-            width: 120px;
-            height: 34px;
-            display: inline-block;
-            border-radius: 14px;
-        }
-        
-        nav{
-            background-image: linear-gradient(#d4dbff, #f3f5ff);
-            display: grid;
-            grid-template-rows: repeat(2, 30%);
-            grid-template-columns: 1fr 1fr;
-        }
-        
-        #Menu{
-            display: flex;
-            grid-column: 1;
-            grid-row: 1 / 2;
-            margin-top: 3%;
-        }
-        
-        #Menu > img{
-            width: auto;
-            height: 75%;
-            margin-left: 5%;
-            margin-right: 7%;
-        }
-        
-        #Menu > h3{
-            padding-left: 2.25%;
-        }
-        
-        
-        .Companies{
-            text-align: center;
-        }
-        
-        #Companieslogo{
-            display: flex;
-            width: 50%;
-            height: auto;
-            margin-left: 3%;
-            margin-right: 3%;
-            text-align: center;
-        }
-        
-        #Companieslogo > img{
-            margin: 2%;
-        }
-        
-        .Blue_Boxes{
-            background-image: linear-gradient(#f3f5ff, #d4dbff);
-        }
-        
-        .Lorem_List{}
-        
-        .fa-check-square{
-            background: -webkit-gradient(linear, left top, left bottom, from(#d4dbff), to(#f3f5ff));
-	       -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        footer{
-            background-image: linear-gradient(#d4dbff, #f3f5ff);
-        }
-        
-        Footerlink{
-            display: flex;
-        }
-    </style>
+    img {
+        width: 33%;
+        height: auto;
+    }
     
-    <body>
-        <nav>
-            <div id = "Menu">
-                <img src ="images/Title.png">
-                <h3>About</h3>
-                <h3>Services</h3>
-                <h3>Blog</h3>
-                <h3>Contact</h3>
-            </div>
-            <div id="NavInfo">
-                <h2>Helping contractors get found by the right people</h2>
-                <p>We create valuable conversions to grow your business and take incoming calls off your hands</p>
-                <button></button>
-                <button></button>
-            </div>
-            <div id="Doggie">
-                <img src="images/Dog_1.png">
-            </div>
-        </nav>
-        
-        <section class= "Companies">
-            <p align ="center" >
-                <b>Helping to Grow the Next Generation of Companies</b>
-            </p>
-            <div id="Companieslogo">
-                <img src ="images/HandyMoon.png">
-                <img src ="images/Roanoke.png">
-                <img src ="images/Eversound.png">
-                <img src ="images/Class101.png">
-            </div>
-        </section>
-        
-        <section class="Blue_Boxes">
-            <h2>Using intuitive marketing to bring in and manage qualified leads.</h2>
-            <p>Lorem ipsum</p>
-            <div>
-                <img src ="images/Dog_2.png">
-            </div>
-        </section>
-        
-        <section class="Lorem_List">
+    button {
+        color: white;
+        border: none;
+        width: 120px;
+        height: 34px;
+        display: inline-block;
+        border-radius: 14px;
+    }
+    
+    nav {
+        background-image: linear-gradient(#d4dbff, #f3f5ff);
+        display: grid;
+        grid-template-rows: repeat(2, 2fr);
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 5px;
+    }
+    
+    #Menu {
+        display: flex;
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 2.33%;
+    }
+    
+    #NavInfo {
+        grid-column: 1;
+        margin-left: 20%;
+    }
+    
+    #Doggie {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        margin-left: 7.5%;
+    }
+    
+    #Doggie>img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    #Menu>img {
+        width: auto;
+        height: 20%;
+        margin-left: 5%;
+        margin-right: 7%;
+    }
+    
+    #Menu>h3 {
+        padding-left: 2.55%;
+    }
+    
+    .Companies {
+        text-align: center;
+    }
+    
+    #Companieslogo {
+        display: flex;
+        width: 50%;
+        height: auto;
+        margin-left: 8%;
+        margin-right: 3%;
+        text-align: center;
+    }
+    
+    #Companieslogo>img {
+        margin-bottom: 7.5%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    
+    .Services {
+        background-image: linear-gradient(#f3f5ff, #d4dbff);
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr 2fr;
+    }
+    
+    #Text {
+        display: flex;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        grid-column: 1;
+    }
+    
+    #Images {
+        grid-row: 2;
+        padding-bottom: 2%;
+        position: sticky;
+        left: 0;
+    }
+    
+    #Images>img {
+        width: 25%;
+        margin-left: 1%
+    }
+    
+    .Two_Column {
+        display: grid;
+        margin: 3%;
+        grid-template-columns: 1fr 3fr;
+    }
+    
+    #TC_Text {
+        grid-column: 1;
+    }
+    
+    #TC_Image {
+        grid-column: 2 / 3;
+        align-content: center;
+        width: 250%;
+        height: 250%;
+    }
+    
+    .fa-check-square {
+        background: -webkit-gradient(linear, left top, left bottom, from(#d4dbff), to(#f3f5ff));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .fa-ul {
+        padding-top: 7.5%;
+    }
+    
+    .fa-ul>li {
+        padding-bottom: 6.5%;
+    }
+    
+    footer {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        background-image: linear-gradient(#d4dbff, #f3f5ff);
+    }
+    
+    #Footertext {
+        grid-row: 1;
+        grid-column: 1 / 4;
+    }
+    
+    #Footerbutton {
+        grid-row: 2;
+        grid-column: 1 / 4;
+        margin-top: 3%;
+    }
+    
+    #Footerlinks {
+        grid-row: 3;
+        grid-column: 1 / 4;
+        display: flex;
+        justify-content: center;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+</style>
+
+<body style="overflow: hidden;">
+    <nav>
+        <div id="Menu">
+            <img src="images/Title.png">
+            <h3>About</h3>
+            <h3>Services</h3>
+            <h3>Blog</h3>
+            <h3>Contact</h3>
+        </div>
+        <div id="NavInfo">
+            <h2>Helping contractors get found by the right people</h2>
+            <p>We create valuable conversions to grow your business and take incoming calls off your hands</p>
+            <button width="270px"></button>
+            <button width="150px"></button>
+        </div>
+        <div id="Doggie">
+            <img src="images/Dog_1.png">
+        </div>
+    </nav>
+
+    <section class="Companies">
+        <p align="center">
+            <b>Helping to Grow the Next Generation of Companies</b>
+        </p>
+        <div id="Companieslogo">
+            <img src="images/HandyMoon.png">
+            <img src="images/Roanoke.png">
+            <img src="images/Eversound.png">
+            <img src="images/Class101.png">
+        </div>
+    </section>
+
+    <section class="Services">
+        <div id="Text">
+            <h2 style="padding-right: 3%;">Using intuitive marketing to bring in and manage qualified leads.</h2>
+            <p style="padding-left: 3%;">Lorem ipsum dolor sit amet, no dicat mazim tation eam, eu odio adolescens assueverit mea. An quo eligendi copiosae. Nam hinc facilis consequat at. Timeam molestie placerat mei ad.</p>
+        </div>
+        <div id="Images" style="overflow: hidden;">
+            <img src="images/Dog_2.png">
+            <img src="images/Blue_Box.png">
+            <img src="images/Arrows.png" style="width: 5%; height: auto; position: absolute; top: 92%;">
+            <img src="images/Blue_Box.png">
+            <img src="images/Blue_Box.png" style="position: absolute; overflow: hidden;">
+        </div>
+    </section>
+
+    <section class="Two_Column">
+        <div id="TC_Text">
             <h2 align="justify">Lorem ipsum dolor sit amet no dicat mazim</h2>
             <p align="justify">Lorem ipsum dolor sit amet, no dicat mazim tation eam, eu odio adolescens assueverit mea. An quo eligendi copiosae. Nam hinc facilis consequat at.</p>
-            <img src="images/SmallDog.png">
-            <img src="images/Teamwork!.png">
             <ul class="fa-ul">
-                <li><i class="fa-li fa fa-check-square" ></i>Lorem ipsum dolor sit amet</li>
+                <li><i class="fa-li fa fa-check-square"></i>Lorem ipsum dolor sit amet</li>
                 <li><i class="fa-li fa fa-check-square"></i>Lorem ipsum dolor sit amet</li>
                 <li><i class="fa-li fa fa-check-square"></i>Lorem ipsum dolor sit amet</li>
                 <li><i class="fa-li fa fa-check-square"></i>Lorem ipsum dolor sit amet</li>
             </ul>
-        </section>
-        
-        <footer>
-            <h2 align = "center">Lorem ipsum dolor sit amet, no dicat mazim tation eam</h2>
-            <p align ="center">Lorem ipsum dolor sit amet, no dicat mazim tation eam, eu odio adolescens assueverit. mea an quo eligendi copiosae. Nam hinc facilis consequat at. timeam molestie placerate mei ad.</p>
-            <div>
-                <button></button>
-                <button></button>
-            </div>
-            <div id = "Footerlinks">
-                <p>Copyright  2021 9 Dogs Marketing. All Rights Reserved</p>
-                <img src="images/Dog_3.png">
-                <i class="fa fa-facebook-official" style="font-size:36px"></i>
-                <i class="fa fa-twitter-square" style="font-size:36px"></i>
-                <i class="fa fa-linkedin-square" style="font-size:36px"></i>
-                <i class="fa fa-youtube-play" style="font-size:36px"></i>
-            </div>
-        </footer>
-    </body>
+        </div>
+        <div id="TC_Image">
+            <img src="images/Two_Column_Image.png">
+        </div>
+
+    </section>
+
+    <footer>
+        <div id="Footertext">
+            <h2 align="center">Lorem ipsum dolor sit amet, no dicat mazim tation eam</h2>
+            <p align="center">Lorem ipsum dolor sit amet, no dicat mazim tation eam, eu odio adolescens assueverit. mea an quo eligendi copiosae. Nam hinc facilis consequat at. timeam molestie placerate mei ad.</p>
+        </div>
+        <div id="Footerbutton" align="center">
+            <button></button>
+            <button></button>
+        </div>
+        <div id="Footerlinks" align="center">
+            <span style="padding-top: 15%;">Copyright &copy; 2021 9 Dogs Marketing. All Rights Reserved</span>
+            <img src="images/Dog_3.png" style="vertical-align:middle; padding-left: 2%; padding-right: 2%; padding-top: 2%;">
+            <i class="fa fa-facebook-official" style="font-size:40px; padding: 0.2%; padding-top: 15%;"></i>
+            <i class="fa fa-twitter-square" style="font-size:40px; padding: 0.2%; padding-top: 15%;"></i>
+            <i class="fa fa-linkedin-square" style="font-size:40px; padding: 0.2%; padding-top: 15%;"></i>
+            <i class="fa fa-youtube-play" style="font-size:40px; padding: 0.2%; padding-top: 15%;"></i>
+        </div>
+    </footer>
+</body>
+
 </html>
